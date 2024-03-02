@@ -1,6 +1,30 @@
-#what is current time 
-import time 
+import datetime 
 #24hr time
 def alarm(set_time):
 
-    current_time = time.time
+    current_time = datetime.datetime.now().strftime("%H:%M")
+    REM_interval = 1.5
+    rem_sleep = (24.0 - current_time) + set_time
+    new_set_time = 0
+     #rem_sleep = current_time + 1.5
+
+    #time rn + 7.5hrs or 9hrs
+    #find closer time to what was set. 
+    print("Hello World")
+    print(current_time) 
+    
+    if rem_sleep / REM_interval == 0:
+        print("yay")
+    else:
+        while current_time != set_time:
+        #add 1.5 until u exceed it
+            new_set_time += set_time
+            new_set_time += REM_interval
+            if new_set_time > set_time:
+                set_time = new_set_time
+
+    #wake up time
+    if current_time == set_time:
+        print("wake up bitch")
+
+#
