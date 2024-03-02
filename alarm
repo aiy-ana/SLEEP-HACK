@@ -1,0 +1,6 @@
+#what is current time 
+import time 
+#24hr time
+def alarm(set_time):
+
+    current_time = time.time
