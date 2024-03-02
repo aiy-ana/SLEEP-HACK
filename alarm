@@ -50,3 +50,23 @@ def calc_time_diff(time1,time2):
 alarm([17,30])
 
 
+def water_consumption(amount):
+    water_drunk = 0
+    glasses = 240
+    #ml - l
+    ml = glasses * amount
+    water_drunk += ml
+
+    litre = water_drunk / 1000
+    print("You have drunk approximately " + litre + " of water!")
+    left_to_drink = 2 - litre
+    print("You should drink " + left_to_drink + " more water")
+
+    #EXTRA
+    # if woman --> approx: 2L
+    w_approx = 2
+    #if man --> approx: 2.6L
+    m_approx = 2.6
+    if litre >= _approx:
+        print("Yay! You have had the recommended amount of water for today!")
+
