@@ -1,0 +1,3 @@
+text (proposedTime) {
+  description (What the user said to bixby)
+}

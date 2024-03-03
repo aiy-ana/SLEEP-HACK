@@ -1,0 +1,4 @@
+dialog (Result) {
+  match: sayThis(this)
+  template("This is best time to wake up according to your sleep cycles: #{value(this)}")
+}

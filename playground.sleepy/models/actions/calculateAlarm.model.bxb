@@ -1,0 +1,11 @@
+action (calculateAlarm) {
+  type(Search)
+  description (Calcuate ideal alarm time for user)
+  collect {
+    input (proposedTime) {
+      type (proposedTime)
+      min (Required) max (One)
+    }
+  }
+  output (sayThis)
+}

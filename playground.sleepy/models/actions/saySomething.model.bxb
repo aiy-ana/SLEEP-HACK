@@ -1,0 +1,11 @@
+action (saySomething) {
+  type(Search)
+  description (__DESCRIPTION__)
+  collect {
+    input (proposedTime) {
+      type (proposedTime)
+      min (Required) max (One)
+    }
+  }
+  output (sayThis)
+}
