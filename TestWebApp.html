@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <script src = "index.js"></script>
+    <style>
+        h1 {text-align: center;}
+        h2 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+        button {text-align: center;}
+        </style>
+<body>
+    <h1>SLEEP APP</h1>
+    <h2 id="CurrentTimeDisplay">Current Time: </h2>
+    <script>document.getElementById("CurrentTimeDisplay").innerHTML = "Current Time Is: " + new Date().toLocaleTimeString()</script>
+    <div>
+        <label for="DateInput">Input Your Alarm Time</label>
+        <input type = "datetime-local" id = "DateInput">
+        
+    </div>
+    <div id="ButtonDiv">
+        <button onclick='Test(document.getElementById("DateInput").value)'>Calculate Alarm Time!</button>
+        </div>
+    <div id="TextDiv"> 
+        <h2 id="DateText"></h2>
+        </div>
+
+</body>
+</html>
